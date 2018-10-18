@@ -1,2 +1,2 @@
 # hello-world
-It's only my first stepr on GITHUB!
+It's only my first step on GITHUB!
