@@ -5,7 +5,7 @@ function createCar() {
     var engineValues = [0.8, 1.6, 2.0, 2.5, 3.0, 3.6, 5, 7.8];
     var engineHPs = [20, 50, 100, 150, 175, 200, 220, 250, 290, 350];
     var stylies = ["Pickup", "Sedan", "HotHatch", "Truck", "Crossover", "FULL 4x4", "Bus"];
-    var years =  [1900, 1920, 1940, 1960, 1980, 1998]
+    var years =  [1900, 1920, 1940, 1960, 1980, 1999]
 
     var rand1 = Math.floor(Math.random() * brands.length);
     var rand2 = Math.floor(Math.random() * models.length);
@@ -28,11 +28,14 @@ function createCar() {
 }
 
 function showCar(car) {
-    document.write ("<h3>" + car.brand + " " + car.model + " " + car.style + "<br>");
+    document.write ("<p><h5>" + car.brand + " " + car.model + " " + car.style + "<br>");
     document.write ("Двигатель " + car.engineValue + "л " + car.engineHP + " л.с.<br>");
     document.write ("Цвет: " + car.color + "<br>");
-    document.write ("Год выпуска: " + car.year + "</h3");
+    document.write ("Год выпуска: " + car.year + "<br> </h5");
 }
 
-var GetCar = createCar();
+var GetCar;
+for (var i = 0; i<1000; i++) {
+GetCar = createCar();
 showCar (GetCar);
+}
