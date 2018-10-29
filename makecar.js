@@ -33,7 +33,7 @@ function showCar(car) {
     document.write ("Цвет: " + car.color + "<br>");
     document.write ("Год выпуска: " + car.year + "<br> </h5>");
 }
-var numberCars = prompt("How much does cars tou want?", 1);
+var numberCars = prompt("How much does cars you want?", 1);
 for (var i = 0; i<numberCars; i++) {
 showCar (createCar());
 }
