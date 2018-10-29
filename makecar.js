@@ -28,14 +28,12 @@ function createCar() {
 }
 
 function showCar(car) {
-    document.write ("<p><h5>" + car.brand + " " + car.model + " " + car.style + "<br>");
-    document.write ("Двигатель " + car.engineValue + "л " + car.engineHP + " л.с.<br>");
+    document.write ("<p><h4>" + car.brand + " " + car.model + " " + car.style + "</h4> </p>");
+    document.write ("<h5> Двигатель " + car.engineValue + "л " + car.engineHP + " л.с.<br>");
     document.write ("Цвет: " + car.color + "<br>");
-    document.write ("Год выпуска: " + car.year + "<br> </h5");
+    document.write ("Год выпуска: " + car.year + "<br> </h5>");
 }
-
-var GetCar;
-for (var i = 0; i<1000; i++) {
-GetCar = createCar();
-showCar (GetCar);
+var numberCars = prompt("How much does cars tou want?", 1);
+for (var i = 0; i<numberCars; i++) {
+showCar (createCar());
 }
