@@ -23,7 +23,7 @@
               "name": "Launch JavaScript in Chrome",
                 "type": "chrome",
                 "request": "launch",
-                "url": "file:///C:/xampp/htdocs/JavaScript/battleship.html"
+                "url": "file:///C:/xampp/htdocs/GitHub/hello-world/battleship.html"
             },
     
     ]
